@@ -25,10 +25,18 @@ function App() {
   ]
   )
 
+  // Delete Task
+  const deleteTask = (id) => {
+    console.log('delete', id);
+    setTasks(tasks.filter((task) => task.id !== id));
+  }
+
   return (
     <div className="container">
       <Header />
-      <Tasks tasks={tasks}/>
+      {tasks.length > 0 ?
+        <Tasks tasks={tasks} onDeleteTask={deleteTask}/> :
+        'No tasks to show'}
     </div>
     );
 }
