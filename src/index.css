@@ -52,3 +52,25 @@ body {
 .btn:active {
   background-color: rgba(0, 128, 0, 0.5);
 }
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 20px;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
