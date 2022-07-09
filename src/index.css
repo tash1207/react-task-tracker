@@ -25,6 +25,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  min-height: 53px;
 }
 
 .btn {
