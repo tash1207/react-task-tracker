@@ -15,4 +15,4 @@ const Task = ({ task, onDelete, onToggleReminder }) => {
 		)
 }
 
-export default Task
+export default Task;
